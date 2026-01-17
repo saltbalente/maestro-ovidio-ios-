@@ -172,6 +172,299 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 <!-- Removed WordPress oEmbed alternate links to external domain -->
 <meta content="Elementor 3.30.4; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto" name="generator">
 <style>
+	/* ========================================
+   FOOTER CON POLÍTICAS Y TÉRMINOS
+   ======================================== */
+
+. site-footer-policies {
+    background:  linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e8e8e8;
+    padding: 60px 20px 20px;
+    margin-top: 80px;
+    border-top: 3px solid rgba(176, 121, 255, 0.3);
+    position: relative;
+}
+
+.site-footer-policies::before {
+    content: "";
+    position:  absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(176, 121, 255, 0.6) 50%, 
+        transparent 100%);
+}
+
+. footer-policies-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Secciones de políticas */
+.footer-policy-section {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius:  12px;
+    border:  1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+}
+
+.footer-policy-section:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(176, 121, 255, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(176, 121, 255, 0.15);
+}
+
+.footer-policy-title {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom:  20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight:  700;
+    letter-spacing: 0.3px;
+}
+
+.footer-policy-title i {
+    color: #b079ff;
+    font-size: 1.5rem;
+}
+
+.footer-policy-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    color: #d0d0d0;
+}
+
+.footer-policy-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+. footer-policy-list li {
+    padding: 10px 0 10px 24px;
+    position: relative;
+    color: #c8c8c8;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-policy-list li: last-child {
+    border-bottom: none;
+}
+
+. footer-policy-list li::before {
+    content:  "▸";
+    position: absolute;
+    left: 0;
+    color:  #b079ff;
+    font-weight: bold;
+}
+
+.footer-policy-list li strong {
+    color: #ebc861;
+    font-weight: 600;
+}
+
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+. footer-contact-list li {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #d0d0d0;
+}
+
+.footer-contact-list i {
+    color: #b079ff;
+    font-size:  1.2rem;
+    width: 24px;
+}
+
+.footer-contact-list a {
+    color:  #ebc861;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-list a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-link {
+    display: inline-block;
+    margin-top: 16px;
+    color: #b079ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.footer-link:hover {
+    color: #ebc861;
+    border-bottom-color: #ebc861;
+    transform: translateX(4px);
+}
+
+/* Sección de cumplimiento Google Ads */
+.google-ads-compliance {
+    background: linear-gradient(135deg, 
+        rgba(176, 121, 255, 0.08) 0%, 
+        rgba(235, 200, 97, 0.05) 100%);
+    border:  2px solid rgba(176, 121, 255, 0.2);
+}
+
+.google-ads-compliance .footer-policy-title {
+    color: #4caf50;
+}
+
+.google-ads-compliance . footer-policy-list li:: before {
+    content: "✓";
+    color: #4caf50;
+}
+
+/* Navegación del footer */
+.footer-navigation {
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    padding: 30px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-nav-list {
+    list-style: none;
+    padding: 0;
+    margin:  0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-nav-list li a {
+    color: #d0d0d0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 6px;
+    display: block;
+}
+
+.footer-nav-list li a:hover {
+    color: #ffffff;
+    background: rgba(176, 121, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Copyright */
+.footer-copyright {
+    text-align: center;
+    padding:  20px;
+    color: #a0a0a0;
+}
+
+.footer-copyright p {
+    margin:  8px 0;
+    font-size: 0.9rem;
+}
+
+.footer-disclaimer-mini {
+    font-size: 0.85rem ! important;
+    font-style: italic;
+    color: #888;
+    max-width: 800px;
+    margin: 12px auto 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-policies-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-policy-section {
+        padding: 24px;
+    }
+    
+    .footer-policy-title {
+        font-size: 1.2rem;
+    }
+    
+    .footer-nav-list {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    
+    .footer-nav-list li a {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-footer-policies {
+        padding: 40px 15px 15px;
+    }
+    
+    .footer-policy-title {
+        font-size: 1.1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .footer-contact-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-policy-section {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+. footer-policy-section:nth-child(1) { animation-delay: 0.1s; }
+.footer-policy-section:nth-child(2) { animation-delay: 0.2s; }
+.footer-policy-section:nth-child(3) { animation-delay: 0.3s; }
+.footer-policy-section:nth-child(4) { animation-delay: 0.4s; }
+.footer-policy-section:nth-child(5) { animation-delay: 0.5s; }
+.footer-policy-section:nth-child(6) { animation-delay: 0.6s; }
         .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
 					background-image: none !important;
@@ -1825,6 +2118,127 @@ var ElementorProFrontendConfig = {"ajaxurl":"./","nonce":"691a8917d8","urls":{"a
 </script>
 <script src="./js/lazyload-fix.js"></script>
 </body>
+	<!-- Footer con Políticas y Términos -->
+<footer class="site-footer-policies">
+    <div class="footer-policies-container">
+        
+        <!-- Sección de Política de Privacidad -->
+        <div class="footer-policy-section">
+            <h3 class="footer-policy-title">
+                <i class="fas fa-shield-alt"></i>
+                Política de Privacidad
+            </h3>
+            <p>En Maestro Ovidio respetamos su privacidad. Recopilamos y usamos datos personales únicamente para mejorar nuestros servicios, cumpliendo con GDPR, CCPA y demás regulaciones de protección de datos.</p>
+            <ul class="footer-policy-list">
+                <li><strong>Datos recopilados:</strong> Nombre, correo electrónico, consultas realizadas</li>
+                <li><strong>Uso de datos:</strong> Atención de consultas y mejora del servicio</li>
+                <li><strong>Cookies:</strong> Utilizamos cookies para mejorar su experiencia de navegación</li>
+                <li><strong>Derechos:</strong> Acceso, rectificación, cancelación y oposición de sus datos</li>
+            </ul>
+            <a href="#privacy-full" class="footer-link">Leer política completa →</a>
+        </div>
+
+        <!-- Sección de Términos y Condiciones -->
+        <div class="footer-policy-section">
+            <h3 class="footer-policy-title">
+                <i class="fas fa-file-contract"></i>
+                Términos y Condiciones
+            </h3>
+            <p>Al utilizar nuestros servicios, usted acepta los siguientes términos y condiciones: </p>
+            <ul class="footer-policy-list">
+                <li><strong>Servicio:</strong> Consultas espirituales y trabajos esotéricos</li>
+                <li><strong>Edad mínima:</strong> Solo para mayores de 18 años</li>
+                <li><strong>Responsabilidad:</strong> Los usuarios son responsables de la información proporcionada</li>
+                <li><strong>Pagos:</strong> Los servicios se cobran según tarifa establecida</li>
+                <li><strong>Reembolsos:</strong> Consultar política de reembolsos antes de contratar</li>
+            </ul>
+            <a href="#terms-full" class="footer-link">Leer términos completos →</a>
+        </div>
+
+        <!-- Sección de Descargos Legales -->
+        <div class="footer-policy-section">
+            <h3 class="footer-policy-title">
+                <i class="fas fa-exclamation-triangle"></i>
+                Descargos Legales
+            </h3>
+            <p><strong>IMPORTANTE:</strong> Lea atentamente antes de contratar nuestros servicios: </p>
+            <ul class="footer-policy-list">
+                <li><strong>Entretenimiento:</strong> Nuestros servicios son para fines de entretenimiento y apoyo espiritual</li>
+                <li><strong>No sustituye profesionales:</strong> No ofrecemos asesoramiento médico, psicológico o legal</li>
+                <li><strong>Sin garantías:</strong> Los resultados pueden variar según cada persona y situación</li>
+                <li><strong>Creencias personales:</strong> Los servicios espirituales son de carácter personal y voluntario</li>
+                <li><strong>Consulta médica:</strong> En caso de problemas de salud, consulte a un profesional médico</li>
+            </ul>
+        </div>
+
+        <!-- Sección de Política de Cookies -->
+        <div class="footer-policy-section">
+            <h3 class="footer-policy-title">
+                <i class="fas fa-cookie-bite"></i>
+                Política de Cookies
+            </h3>
+            <p>Utilizamos cookies y tecnologías similares para: </p>
+            <ul class="footer-policy-list">
+                <li>Mejorar la funcionalidad del sitio web</li>
+                <li>Analizar el tráfico y comportamiento de usuarios</li>
+                <li>Personalizar contenido y anuncios</li>
+                <li>Proporcionar funciones de redes sociales</li>
+            </ul>
+            <p>Puede gestionar sus preferencias de cookies en la configuración de su navegador.</p>
+            <a href="#cookies-full" class="footer-link">Gestionar cookies →</a>
+        </div>
+
+        <!-- Sección de Información de Contacto -->
+        <div class="footer-policy-section">
+            <h3 class="footer-policy-title">
+                <i class="fas fa-envelope"></i>
+                Información de Contacto
+            </h3>
+            <p>Para consultas sobre privacidad, datos personales o términos de servicio:</p>
+            <ul class="footer-contact-list">
+                <li><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/+14133912149">+1 (413) 391-2149</a></li>
+                <li><i class="fas fa-envelope"></i> <strong>Email:</strong> contacto@maestroovidio.com</li>
+                <li><i class="fas fa-clock"></i> <strong>Horario:</strong> 24/7 - Consultas disponibles</li>
+            </ul>
+        </div>
+
+        <!-- Sección de Cumplimiento Google Ads -->
+        <div class="footer-policy-section google-ads-compliance">
+            <h3 class="footer-policy-title">
+                <i class="fas fa-check-circle"></i>
+                Cumplimiento Normativo
+            </h3>
+            <p>Este sitio cumple con las políticas de Google Ads y normativas internacionales:</p>
+            <ul class="footer-policy-list">
+                <li>✓ Política de privacidad clara y accesible</li>
+                <li>✓ Términos y condiciones transparentes</li>
+                <li>✓ Descargos legales apropiados</li>
+                <li>✓ Información de contacto verificable</li>
+                <li>✓ Cumplimiento GDPR y CCPA</li>
+                <li>✓ Contenido apto para mayores de edad</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Navegación del Footer -->
+    <nav class="footer-navigation">
+        <ul class="footer-nav-list">
+            <li><a href="#privacy-policy">Política de Privacidad</a></li>
+            <li><a href="#terms-of-service">Términos de Servicio</a></li>
+            <li><a href="#cookie-policy">Política de Cookies</a></li>
+            <li><a href="#disclaimer">Descargos Legales</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#gdpr">Derechos GDPR</a></li>
+        </ul>
+    </nav>
+
+    <!-- Copyright -->
+    <div class="footer-copyright">
+        <p>&copy; 2026 Maestro Ovidio - Santero y Esoterista.  Todos los derechos reservados.</p>
+        <p class="footer-disclaimer-mini">Servicios de entretenimiento y apoyo espiritual. No sustituye asesoramiento profesional médico o legal.</p>
+    </div>
+</footer>
 </html>
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
